@@ -4,32 +4,43 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/reset.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./styles/header.css">
+        <link rel="stylesheet" href="./styles/box-mensaje.css">
+        <link rel="stylesheet" href="./styles/box-desencriptado.css">
+        <link rel="stylesheet" href="./styles/footer.css">
+
+
+
         <link rel="stylesheet" href="./styles/style.css">
+
         <title>Encriptador</title>
     </head>
     
     <body>
         <header>
-                <a href="index.html"><img src="./img/Logo@2x.png" alt="logo alura" class="logo"></a>
-                <a href="https://gisedeveloper.framer.website/"><img src="./img/logo_Gise.png" class="website"></a>
-        </header>
+            <a href="index.html"><img src="./img/Logo@2x.png" alt="logo alura" class="logo"></a>
+            <a href="https://gisedeveloper.framer.website/"><img src="./img/logo_Gise.png" class="website"></a>
+          </header>
+               
         <div class="principal">
             <section class="box1">
-                    <textarea id="mensaje" placeholder="Ingrese el texto aquí" class="cajitaDeTexto"></textarea>
-                    <div class="box1_11">
-                        <p> <i class="fa-solid fa-circle-exclamation"></i> Solo letras minusculas y sin acentos</p>
-                        <div class="btn">
-                            <input type="submit" value="Encriptar" class="encriptar" onClick="encriptarTexto()">
-                            <input type="submit" value="Desencriptar" class="desencriptar" onClick="desencriptarTexto()">
-                        </div>
-                    </div>  
-            </section>
+                <textarea id="mensaje" placeholder="Ingrese el texto aquí" class="cajitaDeTexto"></textarea>
+                <div class="box1_11">
+                  <p> <i class="fa-solid fa-circle-exclamation"></i> Solo letras minusculas y sin acentos</p>
+                  <div class="btn">
+                    <input type="submit" value="Encriptar" class="encriptar" onClick="encriptarTexto()">
+                    <input type="submit" value="Desencriptar" class="desencriptar" onClick="desencriptarTexto()">
+                  </div>
+                </div>  
+              </section>
+              
             <section class="box2">
                 <div class="box2_2">
                     <textarea readonly class="textodesencriptado"  id="cuadroDeTexto"></textarea>
@@ -40,10 +51,12 @@
         <script src="./js/app.js"></script>
 
         <footer>
-            <a href="https://www.behance.net/gvbustamante">
-                <img src="img/Behance-Logo.png" alt="logo Behance"
-                class="logo-behance" width="50" height="25">
-            </a>
+            <ul class="redes-sociales">
+                <li><a href="https://www.linkedin.com/in/gvbustamante/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/Gvbustamante/" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li>
+                <li><a href="https://twitter.com/GisellaBM" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.behance.net/gvbustamante" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+                <li><a class="curriculo-btn" href="#" target="_blank"><i class="fa-light fa-file-pdf"></i></a></li>
         </footer>
     </body>
     
